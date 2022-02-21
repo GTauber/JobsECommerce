@@ -1,0 +1,3 @@
+br\com\taubercommerce\beans\AdminJobsBean.class
+br\com\taubercommerce\DAO\JobsDAO.class
+br\com\taubercommerce\model\JobsModel.class

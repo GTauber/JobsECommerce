@@ -1,9 +1,15 @@
 package br.com.taubercommerce.model;
 
+import javax.persistence.*;
 import java.math.BigDecimal;
 
+@Entity
 public class JobsModel {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
     private String title;
+    @Lob
     private String description;
     private String company;
     private BigDecimal price;

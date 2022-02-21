@@ -1,7 +1,15 @@
 package br.com.taubercommerce.DAO;
 
-public class JobsDAO {
+import br.com.taubercommerce.model.JobsModel;
 
-  //  @PersistenceContext
-    // private EntityManager;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+public class JobsDAO {
+    @PersistenceContext
+    private EntityManager em;
+
+    public void save(JobsModel job) {
+        em.persist(job);
+    }
 }
